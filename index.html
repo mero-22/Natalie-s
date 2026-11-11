@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff6f2">
+  <title>For Natalie ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">୨୧ a little place for Natalie</a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav id="nav">
+    <a href="#gallery">gallery</a>
+    <a href="#letters">letters</a>
+    <a href="#memories">memories</a>
+    <a href="#play">little games</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">✧ A TINY CORNER OF THE UNIVERSE ✧</p>
+    <h1>For you,<br><em>Natalie.</em></h1>
+    <p class="hero-sub">A little collection of smiles, silly moments, and all the lovely things that remind me of you.</p>
+    <a class="button primary" href="#surprise">Open your little surprise ♡</a>
+    <p class="tiny-note">made with a ridiculous amount of affection</p>
+  </div>
+  <div class="hero-art">
+    <div class="halo"></div>
+    <div class="hero-photo photo-frame">
+      <img src="assets/photos/cover.jpg" alt="Natalie" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')">
+      <div class="placeholder-content"><span>♡</span><small>your favorite photo goes here</small></div>
+    </div>
+    <span class="sticker sticker-one">so lovely!</span>
+    <span class="sticker sticker-two">✿</span>
+    <span class="floating-heart">♥</span>
+    <span class="hero-caption">my favorite view</span>
+  </div>
+</section>
+
+<section class="intro section" id="surprise">
+  <div class="section-heading">
+    <p class="eyebrow">A NOTE BEFORE YOU EXPLORE</p>
+    <h2>Hi, pretty girl ♡</h2>
+  </div>
+  <div class="intro-card">
+    <span class="card-bow">୨୧</span>
+    <p>I made this little website just for you, Natalie. There are photos, tiny memories, a few words from my heart, and some silly things to make you smile.</p>
+    <p class="script">Take your time, sweetheart.</p>
+    <button class="text-button" id="sprinkleBtn">Send me a little love ✧</button>
+    <div class="love-counter">little love sent: <strong id="loveCount">0</strong></div>
+  </div>
+</section>
+
+<section class="section gallery-section" id="gallery">
+  <div class="section-heading">
+    <p class="eyebrow">MOMENTS WORTH KEEPING</p>
+    <h2>Our little gallery</h2>
+    <p class="section-desc">A few snapshots, pretty things, and memories I never want to misplace.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item tall">
+      <img src="assets/photos/photo-1.jpg" alt="Memory 1">
+      <div class="gallery-placeholder">♡<small>photo one</small></div>
+      <figcaption>the kind of moment I replay</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="assets/photos/photo-2.jpg" alt="Memory 2">
+      <div class="gallery-placeholder">✿<small>photo two</small></div>
+      <figcaption>pretty little things</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <img src="assets/photos/photo-3.jpg" alt="Memory 3">
+      <div class="gallery-placeholder">୨୧<small>photo three</small></div>
+      <figcaption>you make life softer</figcaption>
+    </figure>
+    <figure class="gallery-item wide">
+      <img src="assets/photos/photo-4.jpg" alt="Memory 4">
+      <div class="gallery-placeholder">♡<small>photo four</small></div>
+      <figcaption>one for the scrapbook</figcaption>
+    </figure>
+  </div>
+  <p class="photo-tip">♡ Put your pictures inside assets/photos/ using the matching filenames.</p>
+</section>
+
+<section class="section letter-section" id="letters">
+  <div class="section-heading">
+    <p class="eyebrow">SEALED WITH A KISS</p>
+    <h2>Letters for you</h2>
+    <p class="section-desc">Pick an envelope. I tucked a little something inside each one.</p>
+  </div>
+  <div class="envelope-row">
+    <button class="envelope" data-letter="0"><span>୨୧</span><b>01</b><small>on an ordinary day</small></button>
+    <button class="envelope" data-letter="1"><span>♡</span><b>02</b><small>when you need a smile</small></button>
+    <button class="envelope" data-letter="2"><span>✿</span><b>03</b><small>just because</small></button>
+  </div>
+  <article class="letter-paper hidden" id="letterPaper">
+    <button class="close-letter" id="closeLetter">×</button>
+    <p class="eyebrow">A LITTLE LETTER, JUST FOR YOU</p>
+    <h3 id="letterTitle">Dear Natalie,</h3>
+    <p id="letterText"></p>
+    <p class="script">Always yours ♡</p>
+  </article>
+</section>
+
+<section class="section memory-section" id="memories">
+  <div class="section-heading">
+    <p class="eyebrow">LITTLE THINGS, BIG FEELINGS</p>
+    <h2>Our memory lane</h2>
+    <p class="section-desc">A timeline for the moments that make your story yours.</p>
+  </div>
+  <div class="timeline">
+    <article class="memory">
+      <span class="memory-dot">♡</span>
+      <p class="memory-date">THE BEGINNING</p>
+      <h3>When our story started</h3>
+      <p>That first little chapter. Add the date and the story of how it all began.</p>
+    </article>
+    <article class="memory">
+      <span class="memory-dot">✿</span>
+      <p class="memory-date">A FAVORITE DAY</p>
+      <h3>A day I keep close</h3>
+      <p>One of those days that felt simple, happy, and completely ours.</p>
+    </article>
+    <article class="memory">
+      <span class="memory-dot">୨୧</span>
+      <p class="memory-date">RIGHT NOW</p>
+      <h3>Still choosing you</h3>
+      <p>And here we are, making more memories to look back on someday.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section play-section" id="play">
+  <div class="section-heading">
+    <p class="eyebrow">A TINY TEST, MISS LOVELY</p>
+    <h2>How well do you know us?</h2>
+    <p class="section-desc">A very serious quiz. (Not really. You may giggle.)</p>
+  </div>
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-top">
+      <span>THE NATALIE QUIZ</span>
+      <span id="quizProgress">01 / 03</span>
+    </div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <h3 id="question"></h3>
+    <div class="answers" id="answers"></div>
+    <p class="quiz-feedback" id="quizFeedback"></p>
+    <button class="button primary hidden" id="nextQuestion">Next question →</button>
+  </div>
+</section>
+
+<section class="finale section">
+  <div class="finale-card">
+    <p class="eyebrow">ONE LAST THING</p>
+    <h2>In every version<br>of my day, <em>there's you.</em></h2>
+    <p>Thank you for being my favorite notification, my soft place to land, and my very own kind of magic.</p>
+    <button class="button primary" id="finalButton">One more surprise ♡</button>
+    <div class="final-message hidden" id="finalMessage">I love you, Natalie. More than all the little hearts on this page. ♡</div>
+    <span class="final-flower">✿</span>
+  </div>
+</section>
+</main>
+
+<footer>made for Natalie, with love ♡</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
